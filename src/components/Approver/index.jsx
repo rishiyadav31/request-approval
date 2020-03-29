@@ -9,7 +9,11 @@ const Approver = ({ approver, approved }) => {
     <div className="approver-wrapper">
       <div className="circle-icon small-font grey-text">{approver.seqId}</div>
       <div className="usr-img">
-        <img className="profile-pic" src={profile_picture} alt={first_name} />
+        <img
+          className="profile-pic"
+          src={profile_picture}
+          alt={`${first_name} ${last_name}`}
+        />
       </div>
       <div className="user-details">
         <p className="user-name">

@@ -18,6 +18,13 @@
   src: url("./fonts/sfprofonts/SF-Pro-Display-Semibold.otf");
 }
 
+/** Semibold */
+@font-face {
+  font-family: "SFProDisplay";
+  font-weight: 700;
+  src: url("./fonts/sfprofonts/SF-Pro-Display-Bold.otf");
+}
+
 
 body {
   margin: 0;
@@ -27,7 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
-  background: #f2f2f2;
+  background: #f9fafb;
   color: #222222;
 }
 

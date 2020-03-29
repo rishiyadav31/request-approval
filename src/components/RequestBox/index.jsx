@@ -15,7 +15,7 @@ const RequestBox = ({ request }) => {
       <div className="row">
         <div className="request-details border-right">
           <DetailsGrid details={request}></DetailsGrid>
-          <RequestNote service={request.service}></RequestNote>
+          <RequestNote service={service}></RequestNote>
           <Actions></Actions>
         </div>
         <div className="request-approvers">

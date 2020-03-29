@@ -4,7 +4,6 @@ import fileIcon from "./file.svg";
 import "./index.css";
 
 const DetailsGrid = ({ details }) => {
-  const request = details;
   return (
     <div className="detail-box">
       <div className="detail-row row">
@@ -14,11 +13,11 @@ const DetailsGrid = ({ details }) => {
         <div className="detail-desc col-desc">
           <img
             className="profile-pic"
-            src={request.requested_by.profile_picture}
+            src={details.requested_by.profile_picture}
             alt="Requested By"
           />
           <span>
-            {`${request.requested_by.first_name} ${request.requested_by.last_name}`}
+            {`${details.requested_by.first_name} ${details.requested_by.last_name}`}
           </span>
         </div>
       </div>
@@ -27,7 +26,7 @@ const DetailsGrid = ({ details }) => {
           <span>Cost</span>
         </div>
         <div className="detail-desc col-desc">
-          <span>{filterCurrency(request.cost)}</span>
+          <span>{filterCurrency(details.cost)}</span>
         </div>
       </div>
       <div className="two-col row">
@@ -36,8 +35,8 @@ const DetailsGrid = ({ details }) => {
         </div>
         <div className="detail-desc col-desc-sm border-right">
           <span>
-            {request.renewal_frequency_in_months}
-            {` ${request.renewal_frequency_in_months > 1 ? "months" : "month"}`}
+            {details.renewal_frequency_in_months}
+            {` ${details.renewal_frequency_in_months > 1 ? "months" : "month"}`}
           </span>
         </div>
         <div className="detail-title grey-text col-title">
@@ -45,7 +44,9 @@ const DetailsGrid = ({ details }) => {
         </div>
         <div className="detail-desc col-desc-sm">
           <span>
-            {filterCurrency(request.renewal_frequency_in_months * request.cost)}
+            {filterCurrency(
+              (12 / details.renewal_frequency_in_months) * details.cost
+            )}
           </span>
         </div>
       </div>
@@ -54,7 +55,7 @@ const DetailsGrid = ({ details }) => {
           <span>Expense Account</span>
         </div>
         <div className="detail-desc col-desc">
-          <span>{request.expense_account}</span>
+          <span>{details.expense_account}</span>
         </div>
       </div>
       <div className="detail-row row">
@@ -62,7 +63,7 @@ const DetailsGrid = ({ details }) => {
           <span>File</span>
         </div>
         <div className="detail-desc col-desc">
-          {request.files.map((file, index) => (
+          {details.files.map((file, index) => (
             <a
               key={index}
               className="filename"
@@ -81,7 +82,7 @@ const DetailsGrid = ({ details }) => {
           <span>Description</span>
         </div>
         <div className="detail-desc col-desc block-sm">
-          <span>{request.description}</span>
+          <span>{details.description}</span>
         </div>
       </div>
     </div>

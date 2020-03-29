@@ -36,8 +36,8 @@
 }
 
 .file-icon {
-  width: 20px;
-  margin-right: 10px;
+  height: 15px;
+  margin-right: 8px;
   vertical-align: middle;
 }
 
@@ -49,15 +49,15 @@
 
 @media (max-width: 768px) {
   .col-title {
-    flex-basis: 50%
+    flex-basis: 40%
   }
 
   .col-desc {
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
 
   .col-desc-sm {
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
 
   .two-col .detail-title:first-child,

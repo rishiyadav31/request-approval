@@ -40,13 +40,11 @@ class Request extends Component {
       return <h1 className="centered">Loading...</h1>;
     } else {
       return (
-        !this.state.loading && (
-          <div className="container">
-            <Header></Header>
-            <Notification notification={notification}></Notification>
-            <RequestBox request={request}></RequestBox>
-          </div>
-        )
+        <div className="container">
+          <Header></Header>
+          <Notification notification={notification}></Notification>
+          <RequestBox request={request}></RequestBox>
+        </div>
       );
     }
   }

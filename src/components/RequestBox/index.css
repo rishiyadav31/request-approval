@@ -12,6 +12,7 @@
 
 .approvers h4 {
   margin: 10px 0;
+  font-weight: 600;
 }
 
 .request-approvers {
@@ -31,11 +32,11 @@
     flex-basis: 100%;
     padding-bottom: 20px;
     margin-bottom: 80px;
+    box-shadow: 0px -1px 0px rgba(34, 34, 34, 0.05), 0px 1px 0px rgba(34, 34, 34, 0.05);
   }
 
   .request-box {
     border-radius: 0px;
     position: relative;
-    box-shadow: 0px -1px 0px rgba(34, 34, 34, 0.05), 0px 1px 0px rgba(34, 34, 34, 0.05);
   }
 }
