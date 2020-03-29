@@ -1,0 +1,43 @@
+.approver-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.circle-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(34, 34, 34, 0.1);
+  text-align: center;
+  line-height: 14px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  line-height: 18px;
+  text-align: center;
+}
+
+.check-mark {
+  background: #26c281;
+}
+
+.usr-img {
+  margin-left: 10px;
+}
+
+.user-details p {
+  margin: 0;
+}
+
+.user-details {
+  flex-grow: 1;
+}
+
+.user-name span:first-child {
+  font-weight: 600;
+}

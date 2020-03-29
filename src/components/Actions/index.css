@@ -1,0 +1,39 @@
+.request-actions {
+  padding: 20px 0;
+}
+
+.request-actions button {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.request-actions button.green {
+  background: #26c281;
+  margin-right: 15px;
+}
+
+.request-actions button.red {
+  background: #ff6448;
+}
+
+@media (max-width: 768px) {
+  .request-actions {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+  }
+
+  .request-actions button {
+    width: 45%;
+  }
+}

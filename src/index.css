@@ -1,13 +1,95 @@
+/** Medium */
+@font-face {
+  font-family: "SFProDisplay";
+  font-weight: 500;
+  src: url("./fonts/sfprofonts/SF-Pro-Display-Medium.otf");
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  font-weight: 400;
+  src: url("./fonts/sfprofonts/SF-Pro-Display-Regular.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SFProDisplay";
+  font-weight: 600;
+  src: url("./fonts/sfprofonts/SF-Pro-Display-Semibold.otf");
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "SFProDisplay", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  background: #f2f2f2;
+  color: #222222;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Grid */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 950px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+/* Text styling */
+.small-font {
+  font-size: 12px;
+}
+
+.large-font {
+  font-size: 16px;
+}
+
+.grey-text {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.orange-text {
+  color: #FFA03D;
+}
+
+.red-text {
+  color: #ff6448;
+}
+
+
+/* helper clasee */
+.profile-pic {
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.border-right {
+  border-right: 1px solid rgba(34, 34, 34, 0.05);
+}
+
+.divider {
+  border-color: rgba(34, 34, 34, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
 }

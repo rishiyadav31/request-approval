@@ -1,0 +1,18 @@
+.service-logo {
+  max-height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.request-title {
+  padding: 10px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.05);
+  font-weight: 600;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .request-title {
+    border-bottom: 0px;
+  }
+}

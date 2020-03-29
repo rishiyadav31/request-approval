@@ -1,0 +1,21 @@
+.notification-wrapper {
+    margin: 15px 0;
+}
+
+.notif-title {
+    margin-right: 10px;
+}
+
+.notif-title img {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .notification-wrapper {
+        padding: 0 15px;
+    }
+
+    .notif-title {
+        display: block;
+    }
+}
